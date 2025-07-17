@@ -18,29 +18,13 @@ body {
 
 .tecblock{
     background-color: rgba(11, 97, 255, 0.2);
-    min-height: 35px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     
 }
 
-.soundbtn {
-    padding: 5px;
-    margin: 5px;
-    background: transparent;
-    color: #0026ff;
-    border-radius:20px;
-    font-size: 18px;
-    font-weight: 700;
-    box-shadow:2px 2px 15px rgb(43, 133, 16);
-    transition: 0.5s;
-    width: 50px;
-}
-
-.muzonoff {
-    background-color: rgba(13, 220, 235, 0.5);
-}
 
 .cvloader {
     text-decoration: none;
@@ -49,20 +33,9 @@ body {
     border-radius: 10px;
     box-shadow:2px 2px 15px rgb(43, 133, 16);
     font-weight: 700;
-    color: rgb(250, 37, 0);
-}
-
-.clang {
-    padding: 5px;
-    margin: 5px;
-    background: transparent;
-    color: #0026ff;
-    border-radius:20px;
-    font-size: 18px;
-    font-weight: 700;
-    box-shadow:2px 2px 15px rgb(43, 133, 16);
-    transition: 0.5s;
-    border: transparent;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(172, 4, 121);
 }
 
 /* header end*/
@@ -226,7 +199,7 @@ body {
 .skills {
     grid-area: skills;
     background-color: rgba(114, 245, 8, 0.5);
-    height: 300px;
+    height: 320px;
 }
 
 .tekskills,

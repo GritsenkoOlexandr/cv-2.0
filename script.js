@@ -1,49 +1,4 @@
 
-/* Audio */
-
-
-let aud=document.querySelector('.audioset');
-
-
-function muzon() {
-aud.volume=0.05;
-}
-
-muzon();
-
-let musoff=document.querySelector('.soundbtn');
-
-musoff.addEventListener("click", ()=> {
-    
-    musoff.classList.toggle('muzonoff');
-
-    if (musoff.classList.contains('muzonoff')) {
-        musoff.innerHTML='<i class="fas fa-volume-mute"></i>';
-        aud.volume=0.0;
-    } else {
-        musoff.innerHTML='<i class="fas fa-volume-off"></i>';
-        aud.volume=0.05;
-    }
-})
-
-/* Audio end */
-
-/* lang */
-
-/*
-const select=document.querySelector('.clang').value;
-const allLang = ['en', 'ru', 'ua'];
-
-select.addEventListener('change', changeLang);
-
-
-
-
-
-
-console.log(select);
-
-/* lang end */
 
 /* Avatar move */
 const btnl=document.querySelector('.lftbtn');
