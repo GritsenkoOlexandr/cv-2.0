@@ -1,0 +1,498 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background: url(img/kiev.jpg) no-repeat fixed center ;
+    background-size: 100% 100%;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+/* header */
+
+.tecblock{
+    background-color: rgba(11, 97, 255, 0.2);
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.soundbtn {
+    padding: 5px;
+    margin: 5px;
+    background: transparent;
+    color: #0026ff;
+    border-radius:20px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow:2px 2px 15px rgb(43, 133, 16);
+    transition: 0.5s;
+    width: 50px;
+}
+
+.muzonoff {
+    background-color: rgba(13, 220, 235, 0.5);
+}
+
+.cvloader {
+    text-decoration: none;
+    background-color:transparent;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow:2px 2px 15px rgb(43, 133, 16);
+    font-weight: 700;
+    color: rgb(250, 37, 0);
+}
+
+.clang {
+    padding: 5px;
+    margin: 5px;
+    background: transparent;
+    color: #0026ff;
+    border-radius:20px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow:2px 2px 15px rgb(43, 133, 16);
+    transition: 0.5s;
+    border: transparent;
+}
+
+/* header end*/
+
+/* main */
+
+.cvblock {
+    display: grid;
+    grid-auto-flow: column;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 20px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 80px 350px 220px auto;
+    grid-template-areas: 
+    "head head"
+    "photo experience"
+    "contact experience"
+    "skills experience";
+    gap: 15px;
+    border-radius: 20px;
+    background-color: rgba(0, 248, 12, 0.3);
+    text-align: center;
+}
+
+/* items */
+.item {
+    border-radius: 20px;
+}
+
+.item:hover {
+    box-shadow:2px 2px 15px rgb(239, 243, 0);
+    transform: scale(1.02, 1.02);
+    transition: 1s;
+}
+
+.itembig {
+    border-radius: 20px;
+}
+
+.itembig:hover {
+    box-shadow:2px 2px 15px rgb(239, 243, 0);
+    transform: scale(1.01, 1.01);
+    transition: 1s;
+}
+
+/* items end */
+
+.headblock {
+    grid-area: head;
+    background-color: rgba(251, 255, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headblock:hover {
+    box-shadow:2px 2px 15px rgb(239, 243, 0);
+}
+
+/* avatar */
+
+.photo {
+    grid-area: photo;
+    background-color: rgba(252, 102, 2, 0.2);
+}
+
+.photoava {
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    position: relative;
+}
+
+
+.avatar {
+    max-height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+
+.avatar:hover {
+    box-shadow:4px 4px 25px rgb(8, 243, 0);
+}
+
+.avatarbtn {
+    color: rgb(71, 105, 255);
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: 10px 0;
+}
+
+.lftbtn,
+.rtbtn{
+    padding: 5px 10px;
+    background-color: transparent;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.lftbtn:hover,
+.rtbtn:hover {
+    color: rgb(235, 28, 28);
+    box-shadow:2px 2px 15px rgb(22, 255, 1);
+    background-color: rgb(210, 255, 47);
+    transform: scale(1.02, 1.02);
+}
+
+/* avatar end */
+
+/* contact */
+
+.contact {
+    grid-area: contact;
+    background-color: rgba(248, 245, 34, 0.5);
+}
+
+.phone {
+    margin: 10px 0;
+}
+
+.phone a {
+    text-decoration: none;
+    color: crimson;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.social-block {
+    display: flex;
+    justify-content:space-evenly;
+    margin: 15px;
+}
+
+.social-block li {
+    list-style: none;
+    margin: 15px 15px;
+    font-size: 30px;
+}
+
+.social-block li a {
+    color: rgb(4, 0, 255);
+}
+
+/* contact end */
+
+/* skills */
+
+.skills {
+    grid-area: skills;
+    background-color: rgba(114, 245, 8, 0.5);
+    height: 300px;
+}
+
+.tekskills,
+.petprojects {
+    list-style: none;
+}
+
+.sertificateloader {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/* skills end */
+
+/* experience */
+
+.experience {
+    grid-area: experience;
+    background-color: rgba(8, 248, 236, 0.5);
+}
+
+.company-block {
+    margin: 15px 10px;
+}
+
+.company-btn {
+    color: rgb(8, 92, 8);
+    width: 100%;
+    height: 70px;
+    background-color: rgb(250, 234, 11);
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.company-info {
+    color: #d118e2;
+}
+
+.company-position {
+    color:rgb(30, 6, 252);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.company-time {
+    color: #146803;
+    font-weight: 600;
+}
+
+.company-desc {
+    color: #8b0303;
+}
+
+/* experience end*/
+
+/* main end */
+
+/* Modal window */
+
+.modal_win {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.modal_content {
+    max-width: 700px;
+    min-height: 100px;
+    background: rgba(199, 239, 241, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    justify-self: center;
+    position: fixed;
+    top: 15%;
+    left: 30%;
+}
+
+.modal_content h4 {
+    font-size: 28px;
+    font-weight: 900;
+    color: red;
+    margin: 15px;
+}
+
+.modal_content h3 {
+    color: rgb(130, 0, 17);
+    font-weight: 900;
+}
+
+.modlogo {
+    height: 280px;
+}
+
+.flagua {
+    height: 40px;
+}
+
+
+.modal_content p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #200ae7;
+    margin: 20px;
+}
+
+.button_mod_block {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn_in, 
+.btn_out {
+    margin: 10px;
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    color:rgb(238, 238, 238);
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #3ae218;
+    text-decoration: none;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.btn_in {
+    background: rgba(52, 238, 6, 0.5);
+}
+
+.btn_out {
+    background: rgba(247, 16, 0, 0.5);
+}
+
+.btn_in:hover, 
+.btn_out:hover {
+    box-shadow:2px 2px 20px #d118e2;
+    transform: scale(1.02, 1.02);
+}
+
+/* Modal window end */
+
+/* footer */
+
+footer {
+    min-height: 30px;
+    background-color: rgba(64, 155, 56, 0.3);
+    color: crimson;;
+}
+
+/* footer end */
+
+h3 {
+    color: rgb(2, 5, 19);
+    text-transform: capitalize;
+    
+    font-weight: 900;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgb(255, 251, 0);
+    margin: 10px 0;
+}
+
+h4 {
+    color:rgb(5, 22, 255);
+    margin: 10px;
+}
+
+/* adaptive */
+
+@media all and (max-width: 480px) {
+    .cvblock {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 350px 250px 300px auto;
+    grid-template-areas: 
+    "head"
+    "photo"
+    "contact"
+    "skills"
+    "experience";
+    gap: 3px;
+    padding: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .modlogo {
+        height: 200px;
+    }
+
+    .modal_content {
+        max-width: 100%;
+        min-height: 95%;
+        background: rgba(199, 239, 241, 0.5);
+        border-radius: 20px;
+        text-align: center;
+        justify-self: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 5px;
+    }
+
+    .modal_content p {
+        font-size: 15px;
+    }
+
+    .button_mod_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_in, 
+    .btn_out {
+    margin: 15px;
+    width: 250px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    color:rgb(238, 238, 238);
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #3ae218;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+}
+
+/* adaptive end */
+
+.active {
+    color: #f30b0b;
+    background-color: #1e8b03;
+    font-weight: 800;
+    text-shadow: 4px 4px 8px #071ce0;
+}
+
+.company-btn:hover {
+    color: #0b1af3;
+    background-color: #e637e6;
+    font-weight: 800;
+}
+
+
+.hidden {
+    display: none;
+}
